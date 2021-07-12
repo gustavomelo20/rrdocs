@@ -1,12 +1,13 @@
 {
-	"name": "miniframework",
+	"name": "Projeto LP",
 	"require": {
-		"php": ">= 7.0"
+		"php": ">= 7.0",
+		"carloswgama/php-pagseguro": "3.*"
 	},
 	"authors": [
 		{
-			"name": "Jorge Sant Ana",
-			"email": "jorge@teste.com.br"
+			"name": "GUSTAVO G. MELO",
+			"email": "infogustavomelo@gmail.com"
 		}
 	],
 	"autoload": {
