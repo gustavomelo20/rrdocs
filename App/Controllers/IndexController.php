@@ -8,18 +8,25 @@ class IndexController extends Action
 {
 
 
-	public function index() {
+	public function index() 
+	{
 
 		$this->render('index');
 	}
-	public function leads() {
+	public function obrigado() 
+	{
 
-        $lead = Container::getModel('Lead');
-        
-		$lead->_set('nome', $_POST['nome']);
-		$lead->_set('email', $_POST['email']);
-		$lead->salvar();
 		$this->render('obrigado');
+	}
+	public function leads() 
+	{
+
+        //$lead = Container::getModel('Lead');
+        
+		//$lead->_set('nome', $_POST['nome']);
+		//$lead->_set('email', $_POST['email']);
+		//$lead->salvar();
+		header('Location: obrigado');
 	}
 
 }

@@ -19,12 +19,14 @@ class Route extends Bootstrap {
 			'controller' => 'indexController',
 			'action' => 'index'
 		);
-		
-		$routes['carrinho'] = array(
-			'route' => '/carrinho',
-			'controller' => 'PayController',
-			'action' => 'Payload'
+
+		$routes['obrigado'] = array(
+			'route' => '/obrigado',
+			'controller' => 'indexController',
+			'action' => 'obrigado'
 		);
+		
+		
 		
 	
 
