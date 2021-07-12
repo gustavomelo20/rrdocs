@@ -21,11 +21,11 @@ class IndexController extends Action
 	public function leads() 
 	{
 
-        //$lead = Container::getModel('Lead');
+        $lead = Container::getModel('Lead');
         
-		//$lead->_set('nome', $_POST['nome']);
-		//$lead->_set('email', $_POST['email']);
-		//$lead->salvar();
+		$lead->_set('nome', $_POST['nome']);
+		$lead->_set('email', $_POST['email']);
+		$lead->salvar();
 		header('Location: obrigado');
 	}
 

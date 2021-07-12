@@ -8,9 +8,9 @@ class Connection {
 		try {
 
 			$conn = new \PDO(
-				"mysql:host=br582.hostgator.com.br;dbname=maquii22_rrdocs;charset=utf8",
-				"maquii22_rrdocs",
-				"Vt@Y3bLTmS@VVt@Y3bLTmS@V" 
+				"mysql:host=localhost;dbname=lp_rrdocs;charset=utf8",
+				"root",
+				"" 
 			);
 
 			return $conn;

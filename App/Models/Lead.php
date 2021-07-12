@@ -20,7 +20,7 @@ class Lead extends Model
        $this->$atributo = $valor;
    }
     public function salvar(){
-        $query = " insert into leads(nome , email , senha)values(:nome, :email)";
+        $query = " insert into leads(nome , email )values(:nome, :email)";
         $stmt = $this->db->prepare($query);
         $stmt->bindValue(':nome',$this->_get('nome'));
         $stmt->bindValue(':email',$this->_get('email'));
