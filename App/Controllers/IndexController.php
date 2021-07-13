@@ -31,6 +31,7 @@ class IndexController extends Action
         
 			echo 'ID do formulario invalido ou não foi definido  - 
 			essa função espera um id , defina em um input hidden com o value="id" : int';
+			die();
 			
 		}
 		$lead->salvar();
