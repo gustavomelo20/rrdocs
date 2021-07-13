@@ -25,14 +25,16 @@ class IndexController extends Action
         
 		$lead->_set('nome', $_POST['nome']);
 		$lead->_set('email', $_POST['email']);
+		$lead->_set('id_cliente', $_POST['id_cliente']);
 		$lead->_set('id_lp', $_POST['id_lp']);
         
 	    if($_POST['id_lp'] == ''){
         
 			echo 'ID do formulario invalido ou não foi definido  - 
-			essa função espera um id , defina em um input hidden com o value="id" : int';
-			die();
-			
+			      essa função espera um id , defina em um input 
+				  hidden com o value="id" :int';
+
+			die();	
 		}
 		$lead->salvar();
 		header('Location: obrigado');
