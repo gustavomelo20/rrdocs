@@ -25,6 +25,7 @@ class IndexController extends Action
         
 		$lead->_set('nome', $_POST['nome']);
 		$lead->_set('email', $_POST['email']);
+		$lead->_set('id_lp', $_POST['id_lp']);
 		$lead->salvar();
 		header('Location: obrigado');
 	}
